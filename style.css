@@ -1,0 +1,279 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #d0e1c7;
+  color: #333;
+  text-align: center;
+}
+
+/* Navigation */
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #296415;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+  background-color: #9dc18b;
+  transform: translateY(-3px);
+}
+
+nav a.active {
+  background-color: #7fa483;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* nav hamburger */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #296415;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #9dc18b;
+  transform: translateY(-3px);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* Content sections */
+.content {
+  display: none;
+  padding: 40px 20px; /* odstęp od krawędzi i miejsce na stałe menu */
+  margin: auto;
+  margin-top: 60px; /* dodatkowy margines, aby nie zasłaniał stałego nav */
+  max-width: 80vw;
+}
+
+.content.active {
+  display: block;
+}
+
+/* Zmniejszenie zdjęcia i wycentrowanie */
+.content img {
+  max-width: 500px; /* lub inna wartość, która Ci odpowiada */
+  width: 100%;
+  display: block;
+  margin: 20px auto; /* dodaje margines u góry i dołu oraz centruje */
+}
+
+/* Lepsze odstępy dla tekstu */
+.content p {
+  margin: 20px 0;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #296415;
+}
+
+h1 {
+  color: #296415;
+}
+
+.inline-container {
+  display: flex;
+  align-items: center;
+}
+
+.kontaktWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.kontaktWrapper p {
+  font-size: 1.5rem;
+}
+
+.kontaktWrapper span {
+  font-size: 2rem;
+}
+
+.homeContact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 85vh;
+}
+
+#home img {
+  max-width: 50vw;
+}
+
+/* Button */
+
+.button {
+  background: linear-gradient(135deg, #4d7a3d, #82b17e);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+  background: linear-gradient(135deg, #3b5d2f, #7fa483);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(10, 147, 150, 0.3);
+}
+
+.button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(10, 147, 150, 0.3);
+}
+
+/* GALERIA */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 10px;
+  text-align: center;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+/* Oceny */
+
+#reviews-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review {
+  margin-bottom: 20px;
+}
+
+.review p {
+  margin: 5px 0;
+}
+
+.review strong {
+  font-size: 1.2rem;
+}
+
+.review em {
+  color: #ff9500;
+}

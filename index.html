@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bowen</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=pin_drop"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=call"
+    />
+    <!-- FONT Monrserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font camera -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <nav>
+      <a href="#" data-target="home">Strona Główna</a>
+      <a href="#" data-target="o-mnie">O mnie</a>
+      <a href="#" data-target="technika-bowena">Technika Bowena</a>
+      <a href="#" data-target="wskazania">Wskazania i przeciwwskazania</a>
+      <a href="#" data-target="opinie">Opinie</a>
+      <a href="#" data-target="cennik">Cennik</a>
+      <a href="#" data-target="kontakt">Kontakt</a>
+    </nav> -->
+    <nav>
+      <div class="nav-container">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="nav-links">
+          <a href="#" data-target="home">Strona Główna</a>
+          <a href="#" data-target="o-mnie">O mnie</a>
+          <a href="#" data-target="technika-bowena">Technika Bowena</a>
+          <a href="#" data-target="wskazania">Wskazania i przeciwwskazania</a>
+          <a href="#" data-target="opinie">Opinie</a>
+          <a href="#" data-target="cennik">Cennik</a>
+          <a href="#" data-target="kontakt">Kontakt</a>
+        </div>
+      </div>
+    </nav>
+
+    <div id="home" class="content active">
+      <div class="homeContact">
+        <img src="logo 2.png" alt="logo 2" />
+        <a href="#" class="button" data-target="kontakt">Umów się na wizytę</a>
+      </div>
+    </div>
+
+    <div id="o-mnie" class="content">
+      <p>
+        Cześć! Nazywam się Łukasz, mam 29 lat i od 5 lat pracuję z techniką
+        Bowena, pomagając ludziom pozbywać się dolegliwości bólowych i poprawiać
+        jakość życia. Praca z ludźmi zawsze była moją pasją, a możliwość
+        wspierania ich w powrocie do zdrowia daje mi ogromną satysfakcję. Od
+        początku mojej drogi zawodowej fascynuje mnie wpływ terapii manualnych
+        na organizm, dlatego stale rozwijam swoją wiedzę.
+      </p>
+      <p>
+        Sport towarzyszy mi od dziecka. Kiedyś grałem w piłkę nożną, a teraz
+        moją pasją jest armwrestling (zawodowe siłowanie na rękę) oraz bieganie.
+        Dzięki temu doskonale rozumiem potrzeby osób aktywnych fizycznie i wiem,
+        jak ważna jest regeneracja oraz prawidłowa praca układu
+        mięśniowo-szkieletowego.
+      </p>
+      <p>
+        Na przestrzeni lat pomogłem już niejednej osobie - zarówno tym, którzy
+        zmagali się z przewlekłym bólem, jak i sportowcom potrzebującym szybszej
+        regeneracji. Ludzki organizm to niesamowity mechanizm, który ma ogromne
+        zdolności do samoregeneracji – trzeba mu tylko odpowiednio pomóc.
+        Właśnie dlatego terapia Bowena jest mi tak bliska – to naturalna metoda,
+        która działa w zgodzie z ciałem, a nie przeciwko niemu. Jeśli chcesz
+        poprawić swoje samopoczucie i zadbać o zdrowie, zapraszam do kontaktu!
+      </p>
+      <!-- <img src="zal 3.png" alt="Łukasz" />
+      <img src="zal 1.png" alt="Łukasz" />
+      <img src="o mnie 1.jpg" alt="Łukasz" />
+      <img src="o mnie 2.jpg" alt="Łukasz" /> -->
+      <section class="gallery">
+        <div class="gallery-item">
+          <img src="zal 3.png" alt="Opis obrazka 1" />
+          <div class="overlay">
+            <p>Opis obrazka 1</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="zal 1.png" alt="Opis obrazka 2" />
+          <div class="overlay">
+            <p>Opis obrazka 2</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="o mnie 2.jpg" alt="Opis obrazka 3" />
+          <div class="overlay push">
+            <p>Opis obrazka 3</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="o mnie 1.jpg" alt="Opis obrazka 3" />
+          <div class="overlay">
+            <p>Opis obrazka 4</p>
+          </div>
+        </div>
+        <!-- Dodaj kolejne elementy galerii według potrzeb -->
+      </section>
+    </div>
+
+    <div id="technika-bowena" class="content">
+      <p>
+        <b>Technika Bowena</b> (BOWTECH) to powięziowa terapia manualna. Działa
+        poprzez układ nerwowy, system mięśniowy i powięziowy, ale także przez
+        układ limfatyczny i krążenia. Jest skuteczna w leczeniu dolegliwości
+        wewnętrznych, w procesie rehabilitacji i profilaktyce zdrowotnej.
+      </p>
+      <p>
+        W Technice Bowena ruchy wykonywane przez terapeutę wywołują wibracje
+        docierające poprzez układ nerwowy do mózgu, a układ mięśniowy i
+        powięziowy rozprowadza je po ciele. Kluczową cechą tej terapii jest jej
+        delikatność, ponieważ terapeuta stosuje subtelne, bezbolesne ruchy.
+        Ruchy te są wykonywane w określonych miejscach ciała, które nie muszą
+        być bezpośrednio związane z obszarem dolegliwości, a mimo to skutecznie
+        wpływają na jego leczenie. Technika ta wyróżnia się również wyjątkową
+        skutecznością, pozwalając na szybszą poprawę zdrowia w porównaniu do
+        tradycyjnych metod leczenia. Kolejnym atutem jest minimalizm – zarówno
+        pod względem liczby ruchów, jak i sesji potrzebnych do osiągnięcia
+        poprawy stanu zdrowia. Podczas terapii wykonuje się niewiele ruchów, a
+        między nimi wprowadza się przerwy.
+      </p>
+      <p>
+        Technika Bowena pomaga organizmowi w samodzielnej regeneracji, a efekty
+        mogą utrzymywać się przez długi czas. Liczba sesji zależy od
+        indywidualnych potrzeb pacjenta.
+      </p>
+      <section class="gallery">
+        <div class="gallery-item">
+          <img src="zal 2.png" alt="Opis obrazka 1" />
+          <div class="overlay">
+            <p>Opis obrazka 1</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="zal 22.png" alt="Opis obrazka 2" />
+          <div class="overlay">
+            <p>Opis obrazka 2</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="zal 222.png" alt="Opis obrazka 2" />
+          <div class="overlay">
+            <p>Opis obrazka 3</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="wskazania" class="content">
+      <h1>Wskazania i przeciwwskazania</h1>
+      <p>
+        Terapia Bowena może być stosowana u wszystkich niezależnie od wieku i
+        stanu zdrowia, począwszy od niemowląt po seniorów. Wykorzystuje się ją
+        do drobnych dolegliwości bólowych, chorób ogólnoustrojowe oraz w stanach
+        ostrych i przewlekłych.
+      </p>
+      <p>
+        Za­bie­gi przy­no­szą na­tych­mia­sto­wą ulgę w nagłych sytuacjach,
+        takich jak: kon­tu­zje, wszelkie dolegliwości kobiet w ciąży, ataki
+        ast­my, stan szoku. U pacjentów niepełnosprawnych i nieuleczalnie
+        chorych poprawiają jakość życia, zmniejszają objawy bólowe, przedłużają
+        sprawność.
+      </p>
+      <p>
+        Nie ma prze­ciw­wska­zań do sto­so­wa­nia Te­ra­pii Bo­we­na. Nie da­je
+        ona też skut­ków ubocz­nych.
+      </p>
+      <p>
+        Przy­kła­do­we scho­rze­nia, w le­cze­niu któ­rych tech­ni­ka Bo­we­na
+        da­je bar­dzo do­bre re­zul­ta­ty:
+      </p>
+      <p><b>&middot pro­ble­my mię­śnio­wo­-sz­kie­le­to­we:</b></p>
+      <p>- bó­le kar­ku, ple­ców i lę­dź­wi, rwa kul­szo­wa</p>
+      <p>- wa­dy krę­go­słu­pa (m. in. sko­lio­za), dys­ko­pa­tie</p>
+      <p>- scho­rze­nia bio­der, ko­lan i stóp (rów­nież haluksy)</p>
+      <p>- ze­spół cie­śni nad­garst­ka, ło­kieć te­ni­si­sty i gol­fi­sty</p>
+      <p>
+        - bó­le i ogra­ni­cze­nia ru­cho­mo­ści bar­ku (w tym „zam­ro­żo­ny
+        bar­k”)
+      </p>
+      <p>- pro­ble­my ze sta­wem żu­ch­wo­wo – skro­nio­wym</p>
+      <p>- zwy­rod­nie­nia i za­pa­le­nia sta­wów (w tym RZS, ZZSK)</p>
+      <p>- bó­le na sku­tek prze­cią­że­nia</p>
+      <p>
+        <b
+          >&middot cho­ro­by neu­ro­lo­gicz­ne: uda­ry, MPD, Par­kin­son, SM,
+          epilepsja, borelioza</b
+        >
+      </p>
+      <p><b>&middot pro­ble­my od­de­cho­we: ast­ma, ro­ze­dma płuc</b></p>
+      <p><b>&middot aler­gie, sła­ba od­por­ność or­ga­ni­zmu</b></p>
+      <p>
+        <b
+          >&middot bó­le gło­wy, mi­gre­ny, za­wro­ty gło­wy, epi­lep­sja,
+          za­to­ki, dys­funk­cje na­rzą­dów zmy­słów</b
+        >
+      </p>
+      <p>
+        <b
+          >&middot pro­ble­my z or­ga­na­mi roz­rod­czy­mi,
+          mie­siącz­ko­wa­niem, me­no­pau­zą, pro­sta­tą, bez­płod­no­ścią</b
+        >
+      </p>
+      <p>
+        <b>&middot do­le­gli­wo­ści w cza­sie cią­ży i oko­ło­po­ro­do­we</b>
+      </p>
+      <p>
+        <b
+          >&middot pro­ble­my tra­wien­ne i wy­dal­ni­cze: zga­ga, re­fluks,
+          cho­ro­ba wrzo­do­wa, scho­rze­nia pę­che­rzy­ka żół­cio­we­go,
+          je­li­ta gru­be­go (w tym je­li­to draż­li­we), bie­gun­ki,
+          za­par­cia, he­mo­ro­idy</b
+        >
+      </p>
+      <p>
+        <b
+          >&middot pro­ble­my krą­że­nio­we: zwią­za­ne z ci­śnie­niem
+          tęt­ni­czym, cho­ro­by ser­ca, za­to­ry lim­fa­tycz­ne</b
+        >
+      </p>
+      <p>
+        <b
+          >&middot na­pię­cie, nie­po­kój, stres, nie­sta­bil­ność
+          emo­cjo­nal­na (w tym ADHD), de­pre­sja</b
+        >
+      </p>
+      <p><b>&middot ze­spół chro­nicz­ne­go zmę­cze­nia</b></p>
+      <p><b>&middot fi­bro­mial­gia i mia­ste­nia</b></p>
+      <p>
+        <b>&middot cho­ro­by tar­czy­cy i in­nych gru­czo­łów do­krew­nych</b>
+      </p>
+      <p>
+        <b
+          >&middot scho­rze­nia pier­si, układ mo­czo­wy: cho­ro­by ne­rek,
+          pę­che­rza i cew­ki, mo­cze­nie noc­ne (u dzie­ci), nie­trzy­ma­nie
+          mo­czu (u do­ro­słych)</b
+        >
+      </p>
+      <p><b>&middot i wie­le in­nych</b></p>
+    </div>
+
+    <div id="cennik" class="content">
+      <img src="cennik.png" alt="cennik" />
+    </div>
+
+    <div id="opinie" class="content">
+      <p>Opinie naszych klientów.</p>
+      <div id="reviews-container"></div>
+    </div>
+
+    <div id="kontakt" class="content">
+      <div class="kontaktWrapper">
+        <h1>Kontakt</h1>
+        <div class="inline-container">
+          <span class="material-symbols-outlined"> call </span>
+          <p>+48 516075828</p>
+        </div>
+        <div class="inline-container">
+          <span class="material-symbols-outlined"> pin_drop </span>
+          <p>Stefana Okrzei 10/2U, 07-300 Ostrów mazowiecka</p>
+        </div>
+        <p>Instragram</p>
+        <p>Facebook</p>
+      </div>
+      <section class="gallery">
+        <div class="gallery-item">
+          <img src="lokal 1.png" alt="Opis obrazka 1" />
+          <div class="overlay">
+            <p>Opis obrazka 1</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="lokal 3.png" alt="Opis obrazka 3" />
+          <div class="overlay push">
+            <p>Opis obrazka 3</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="lokal 4.png" alt="Opis obrazka 3" />
+          <div class="overlay">
+            <p>Opis obrazka 4</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="lokal 5.png" alt="Opis obrazka 3" />
+          <div class="overlay">
+            <p>Opis obrazka 5</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="lokal 6.png" alt="Opis obrazka 3" />
+          <div class="overlay">
+            <p>Opis obrazka 5</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
