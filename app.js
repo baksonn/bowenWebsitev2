@@ -1,5 +1,15 @@
 document.querySelectorAll("nav a, .button").forEach((link) => {
   link.addEventListener("click", function (e) {
+    // Sprawdź, czy link jest zewnętrzny
+    if (
+      this.href &&
+      (this.href.includes("https://www.instagram.com") ||
+        this.href.includes("https://www.facebook.com"))
+    ) {
+      // Jeśli tak, pozwól na domyślne działanie
+      return;
+    }
+
     e.preventDefault();
     const targetId = this.getAttribute("data-target");
 

@@ -28,15 +28,6 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- <nav>
-      <a href="#" data-target="home">Strona Główna</a>
-      <a href="#" data-target="o-mnie">O mnie</a>
-      <a href="#" data-target="technika-bowena">Technika Bowena</a>
-      <a href="#" data-target="wskazania">Wskazania i przeciwwskazania</a>
-      <a href="#" data-target="opinie">Opinie</a>
-      <a href="#" data-target="cennik">Cennik</a>
-      <a href="#" data-target="kontakt">Kontakt</a>
-    </nav> -->
     <nav>
       <div class="nav-container">
         <div class="hamburger">
@@ -53,71 +44,85 @@
           <a href="#" data-target="cennik">Cennik</a>
           <a href="#" data-target="kontakt">Kontakt</a>
         </div>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/terapia_bowena" target="_blank">
+            <img src="instagram.png" alt="Instagram" />
+          </a>
+          <a
+            href="https://www.facebook.com/share/1BaRieZdvx/?mibextid=wwXIfr"
+            target="_blank"
+          >
+            <img src="facebook.png" alt="Facebook" />
+          </a>
+        </div>
       </div>
     </nav>
 
     <div id="home" class="content active">
+      <div class="logoAndCytat">
+        <div><img src="logo 2.png" alt="logo 2" /></div>
+        <div>
+          <p>"Zawsze traktuj całe ciało, nie tylko obawy" ~ Tom Bowen</p>
+        </div>
+      </div>
       <div class="homeContact">
-        <img src="logo 2.png" alt="logo 2" />
+        <!-- <img src="logo 2.png" alt="logo 2" /> -->
         <a href="#" class="button" data-target="kontakt">Umów się na wizytę</a>
       </div>
     </div>
 
     <div id="o-mnie" class="content">
-      <p>
-        Cześć! Nazywam się Łukasz, mam 29 lat i od 5 lat pracuję z techniką
-        Bowena, pomagając ludziom pozbywać się dolegliwości bólowych i poprawiać
-        jakość życia. Praca z ludźmi zawsze była moją pasją, a możliwość
-        wspierania ich w powrocie do zdrowia daje mi ogromną satysfakcję. Od
-        początku mojej drogi zawodowej fascynuje mnie wpływ terapii manualnych
-        na organizm, dlatego stale rozwijam swoją wiedzę.
-      </p>
-      <p>
-        Sport towarzyszy mi od dziecka. Kiedyś grałem w piłkę nożną, a teraz
-        moją pasją jest armwrestling (zawodowe siłowanie na rękę) oraz bieganie.
-        Dzięki temu doskonale rozumiem potrzeby osób aktywnych fizycznie i wiem,
-        jak ważna jest regeneracja oraz prawidłowa praca układu
-        mięśniowo-szkieletowego.
-      </p>
-      <p>
-        Na przestrzeni lat pomogłem już niejednej osobie - zarówno tym, którzy
-        zmagali się z przewlekłym bólem, jak i sportowcom potrzebującym szybszej
-        regeneracji. Ludzki organizm to niesamowity mechanizm, który ma ogromne
-        zdolności do samoregeneracji – trzeba mu tylko odpowiednio pomóc.
-        Właśnie dlatego terapia Bowena jest mi tak bliska – to naturalna metoda,
-        która działa w zgodzie z ciałem, a nie przeciwko niemu. Jeśli chcesz
-        poprawić swoje samopoczucie i zadbać o zdrowie, zapraszam do kontaktu!
-      </p>
-      <!-- <img src="zal 3.png" alt="Łukasz" />
-      <img src="zal 1.png" alt="Łukasz" />
-      <img src="o mnie 1.jpg" alt="Łukasz" />
-      <img src="o mnie 2.jpg" alt="Łukasz" /> -->
-      <section class="gallery">
-        <div class="gallery-item">
-          <img src="zal 3.png" alt="Opis obrazka 1" />
-          <div class="overlay">
-            <p>Opis obrazka 1</p>
+      <section class="image-text-section">
+        <img src="zal 3.png" alt="Opis obrazka" class="left-image" />
+        <div class="text-content">
+          <p>
+            Cześć! Nazywam się Łukasz, mam 29 lat i od 5 lat pracuję z techniką
+            Bowena, pomagając ludziom pozbywać się dolegliwości bólowych i
+            poprawiać jakość życia. Praca z ludźmi zawsze była moją pasją, a
+            możliwość wspierania ich w powrocie do zdrowia daje mi ogromną
+            satysfakcję. Od początku mojej drogi zawodowej fascynuje mnie wpływ
+            terapii manualnych na organizm, dlatego stale rozwijam swoją wiedzę.
+          </p>
+          <p>
+            Sport towarzyszy mi od dziecka. Kiedyś grałem w piłkę nożną, a teraz
+            moją pasją jest armwrestling (zawodowe siłowanie na rękę) oraz
+            bieganie. Dzięki temu doskonale rozumiem potrzeby osób aktywnych
+            fizycznie i wiem, jak ważna jest regeneracja oraz prawidłowa praca
+            układu mięśniowo-szkieletowego.
+          </p>
+          <p>
+            Na przestrzeni lat pomogłem już niejednej osobie - zarówno tym,
+            którzy zmagali się z przewlekłym bólem, jak i sportowcom
+            potrzebującym szybszej regeneracji. Ludzki organizm to niesamowity
+            mechanizm, który ma ogromne zdolności do samoregeneracji – trzeba mu
+            tylko odpowiednio pomóc. Właśnie dlatego terapia Bowena jest mi tak
+            bliska – to naturalna metoda, która działa w zgodzie z ciałem, a nie
+            przeciwko niemu.
+          </p>
+          <p>
+            Jeśli chcesz poprawić swoje samopoczucie i zadbać o zdrowie,
+            zapraszam do kontaktu!
+          </p>
+        </div>
+      </section>
+
+      <!-- Dodajemy klasę "gallery-content" -->
+      <section class="gallery-content">
+        <div class="gallery">
+          <div class="gallery-item">
+            <img src="zal 1.png" alt="Opis obrazka 2" class="adjusted-image" />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="o mnie 2.jpg"
+              alt="Opis obrazka 3"
+              class="adjusted-image2"
+            />
+          </div>
+          <div class="gallery-item">
+            <img src="o mnie 1.jpg" alt="Opis obrazka 4" />
           </div>
         </div>
-        <div class="gallery-item">
-          <img src="zal 1.png" alt="Opis obrazka 2" />
-          <div class="overlay">
-            <p>Opis obrazka 2</p>
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="o mnie 2.jpg" alt="Opis obrazka 3" />
-          <div class="overlay push">
-            <p>Opis obrazka 3</p>
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="o mnie 1.jpg" alt="Opis obrazka 3" />
-          <div class="overlay">
-            <p>Opis obrazka 4</p>
-          </div>
-        </div>
-        <!-- Dodaj kolejne elementy galerii według potrzeb -->
       </section>
     </div>
 
@@ -158,12 +163,6 @@
           <img src="zal 22.png" alt="Opis obrazka 2" />
           <div class="overlay">
             <p>Opis obrazka 2</p>
-          </div>
-        </div>
-        <div class="gallery-item">
-          <img src="zal 222.png" alt="Opis obrazka 2" />
-          <div class="overlay">
-            <p>Opis obrazka 3</p>
           </div>
         </div>
       </section>
@@ -280,7 +279,7 @@
         </div>
         <div class="inline-container">
           <span class="material-symbols-outlined"> pin_drop </span>
-          <p>Stefana Okrzei 10/2U, 07-300 Ostrów mazowiecka</p>
+          <p>Stefana Okrzei 10/2U, 07-300 Ostrów Mazowiecka</p>
         </div>
         <p>Instragram</p>
         <p>Facebook</p>
